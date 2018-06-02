@@ -1,0 +1,102 @@
+@import '../core/variable';
+
+.collection-detail-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+
+  .header-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid map-get($global-color, border-grey);
+    background-color: #fff;
+    z-index: map-get($global-z-index, b);
+  }
+
+  h1 {
+    line-height: 96px;
+    font-weight: bold;
+  }
+
+  .form-item {
+    padding-bottom: 24px;
+  }
+
+  .ant-col-16 {
+    width: 620px;
+    display: flex;
+    line-height: 32px;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .item {
+    display: flex;
+    align-items: flex-start;
+    .ant-form-item-label {
+      width: 14%;
+    }
+  }
+  .ant-form-item-control-wrapper {
+    width: 100%;
+  }
+
+  span.ant-radio + * {
+    position: relative;
+    padding-right: 0;
+  }
+
+  .ant-radio-group {
+    float: right;
+  }
+  .ant-radio-wrapper {
+    margin-right: 0;
+  }
+}
+
+.ant-select-dropdown-menu-item {
+  cursor: initial;
+  padding-right: 20px;
+}
+
+.editor-select {
+  .ant-select-dropdown-menu-item {
+    line-height: 30px;
+  }
+  .ant-select-selection-selected-value {
+  }
+}
+
+.collection-detail-sub-content {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 14%;
+  .part-closer {
+    cursor: pointer;
+  }
+}
+
+.save-content {
+  width: 280px;
+  .radio-content {
+    padding-bottom: 16px;
+  }
+}
+
+.sticky-container {
+  height: calc(100vh - 88px);
+}

@@ -1,0 +1,27 @@
+.button-group {
+  button {
+    min-width: 120px;
+    + button {
+      margin-left: 8px;
+    }
+  }
+  &.align-right {
+    text-align: right;
+  }
+}
+
+.button-add {
+  background-color: #333;
+  border-color: #333;
+  &:hover, &:focus {
+    background-color: #000;
+    border-color: #000;
+  }
+}
+
+.collection-right-buttons {
+  float: right;
+  button {
+    margin: 0 5px 0 5px;
+  }
+}

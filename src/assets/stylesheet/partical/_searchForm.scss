@@ -1,0 +1,21 @@
+.search-form {
+  padding-bottom: 24px;
+  .item {
+    display: flex;
+  }
+
+  .ant-form-item-label {
+    flex-shrink: 0;
+    width: 120px;
+  }
+
+  .ant-form-item-control-wrapper {
+    width: 100%;
+    .ant-form-item-children {
+      width: 100%;
+      .ant-calendar-picker {
+        width: 100%;
+      }
+    }
+  }
+}
