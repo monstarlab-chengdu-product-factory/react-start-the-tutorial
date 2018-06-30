@@ -1,10 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import NoMatch from '../components/common/NoMatch';
-
-import Collections from '../containers/collectionPage/Collections';
-import Collection from '../containers/collectionPage/Collection';
 
 import App from '../containers/App';
 
@@ -15,19 +11,6 @@ const routes = [
     path: host + '/',
     component: App,
     routes: [
-      {
-        path: '/',
-        exact: true,
-        component: Collections
-      },
-      {
-        path: '/collections',
-        component: Collections
-      },
-      {
-        path: '/collection/:id',
-        component: Collection
-      }
     ]
   }
 ];
