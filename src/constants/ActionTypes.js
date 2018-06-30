@@ -1,1 +1,0 @@
-export const SHOWN_GLOBAL_ERROR = 'SHOWN_GLOBAL_ERROR'
